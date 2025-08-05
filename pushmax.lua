@@ -20,7 +20,7 @@ local function isMacAuthorized()
 end
 
 if not isMacAuthorized() then
-  warn("🚫 Tadala Coletor: MAC não autorizado. Acesso bloqueado.")
+  warn("🚫 Tadala Push: MAC não autorizado. Acesso bloqueado.")
   return
 end
 
