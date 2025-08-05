@@ -7,6 +7,7 @@ local allowedMacs = {
   "c23532a210d90000",  -- Eo Grilo
   "00e04cd125600000", -- RednasKram
   "00e57ff410be0000" -- RednasKrma
+  "5a3a9e37690000" -- Farmacia
 }
 
 local function isMacAuthorized()
@@ -19,7 +20,7 @@ local function isMacAuthorized()
 end
 
 if not isMacAuthorized() then
-  warn("🚫 Tadala Coletor: MAC não autorizado. Acesso bloqueado.")
+  warn("🚫 Tadala Pushmax: MAC não autorizado. Acesso bloqueado.")
   return
 end
 
