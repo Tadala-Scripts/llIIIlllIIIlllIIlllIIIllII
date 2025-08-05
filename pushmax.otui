@@ -1,5 +1,5 @@
 PushMaxWindow < MainWindow
-  !text: tr('Tadala-Script V. 2.0')
+  text: tr('Tadala-Script V. 2.0')
   size: 300 330
   @onEscape: self:hide()
   padding: 10
@@ -131,4 +131,5 @@ PushMaxWindow < MainWindow
     anchors.bottom: parent.bottom
     anchors.right: parent.right
     margin-right: 5
+
     size: 45 21
