@@ -1,0 +1,134 @@
+PushMaxWindow < MainWindow
+  !text: tr('Tadala-Script V. 2.0')
+  size: 300 330
+  @onEscape: self:hide()
+  padding: 10
+
+  Label
+    id: topSpacer
+    text: ""
+    anchors.top: parent.top
+    anchors.left: parent.left
+    anchors.right: parent.right
+    height: 10
+
+  Label
+    id: delayMoveText
+    text: Push Delay (Move):
+    anchors.top: topSpacer.bottom
+    anchors.left: parent.left
+    anchors.right: parent.right
+    margin-top: 5
+    text-align: center
+
+  HorizontalScrollBar
+    id: delayMove
+    anchors.top: delayMoveText.bottom
+    anchors.left: parent.left
+    anchors.right: parent.right
+    minimum: 100
+    maximum: 2000
+    step: 1
+    margin-top: 3
+
+  Label
+    id: delayFieldText
+    text: Push Delay (Field):
+    anchors.top: delayMove.bottom
+    anchors.left: parent.left
+    anchors.right: parent.right
+    margin-top: 8
+    text-align: center
+
+  HorizontalScrollBar
+    id: delayField
+    anchors.top: delayFieldText.bottom
+    anchors.left: parent.left
+    anchors.right: parent.right
+    minimum: 100
+    maximum: 2000
+    step: 1
+    margin-top: 3
+
+  Label
+    id: antiPushLabel
+    text: VS AntiPush
+    anchors.top: delayField.bottom
+    anchors.left: parent.left
+    anchors.right: parent.right
+    margin-top: 12
+    text-align: center
+
+  BotItem
+    id: runeId
+    anchors.top: antiPushLabel.bottom
+    anchors.horizontalCenter: parent.horizontalCenter
+    margin-top: 5
+
+  Button
+    id: calibrationToggle
+    anchors.top: runeId.bottom
+    anchors.left: parent.left
+    anchors.right: parent.right
+    margin-top: 10
+    height: 17
+    text: Calibration: OFF
+    background-color: #333333
+    color: #FFFFFF
+
+  Label
+    id: mwLabel
+    text: MW Adjust (s)
+    anchors.top: calibrationToggle.bottom
+    anchors.left: parent.left
+    anchors.right: parent.right
+    margin-top: 10
+    text-align: center
+
+  HorizontalScrollBar
+    id: mwAdjust
+    anchors.top: mwLabel.bottom
+    anchors.left: parent.left
+    anchors.right: parent.right
+    minimum: -20
+    maximum: 20
+    step: 1
+    margin-top: 3
+
+  Button
+    id: fullPushToggle
+    anchors.top: mwAdjust.bottom
+    anchors.left: parent.left
+    anchors.right: parent.right
+    margin-top: 10
+    height: 17
+    text: Full-Push: OFF
+    background-color: #882222
+    color: #FFFFFF
+
+  Button
+    id: autoTargetToggle
+    anchors.top: fullPushToggle.bottom
+    anchors.left: parent.left
+    anchors.right: parent.right
+    margin-top: 5
+    height: 17
+    text: Auto Target Mark: ON
+    background-color: #228822
+    color: #FFFFFF
+
+  HorizontalSeparator
+    id: separator
+    anchors.left: parent.left
+    anchors.right: parent.right
+    anchors.bottom: closeButton.top
+    margin-bottom: 8
+
+  Button
+    id: closeButton
+    !text: tr('Close')
+    font: cipsoftFont
+    anchors.bottom: parent.bottom
+    anchors.right: parent.right
+    margin-right: 5
+    size: 45 21
