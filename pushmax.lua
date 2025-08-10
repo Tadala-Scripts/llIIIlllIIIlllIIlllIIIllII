@@ -427,7 +427,7 @@ local protecao = [[
 ---@diagnostic disable: undefined-global
 setDefaultTab("Main")
 lastPushTime = 0
-pushCooldown = 550 -- tempo mínimo entre pushes (em ms)
+pushCooldown = 740 -- tempo mínimo entre pushes (em ms)
 
 local panelName = "pushmax"
 local ui = setupUI([[
